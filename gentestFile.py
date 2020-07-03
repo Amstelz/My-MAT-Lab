@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
 from PIL import Image
 import numpy as np
 import cv2
@@ -29,22 +31,11 @@ def main():
     pm.horizontal_cut(binimg,dest)
     cntimagetillnow = pm.vertical_cutTraining(dest,cntimagetillnow)
     print('{}'.format(cntimagetillnow),' images now loaded.')
-    tmp = [] 
+    listname = []
     with open('CsvData/TestBook.csv', mode='r', encoding='utf-8-sig') as outfile:
         reader = csv.reader(outfile)
         for rows in reader:
-            tmp.append([rows[0]])
-    #print(tmp)
-    with open('CsvData/DictBook.csv', mode='r', encoding='utf-8-sig') as infile:
-        reader = csv.reader(infile)
-        for rows in reader:
-            for rows2 in tmp:
-                if rows2[0] == rows[0]:
-                    rows2.append(rows[1])
-    listname = []
-    #print(tmp)
-    for data in tmp:
-        listname.append(data[1])
+            listname.append(rows[0])
     #print(listname)
     myFileList = createFileList('testingImgs/verticalcutoutput')
     res = []
@@ -68,8 +59,6 @@ def main():
         value = np.asarray(img_grey.getdata(), dtype=np.int).reshape((img_grey.size[1], img_grey.size[0]))
         #value = np.select([value <= 127, value>127], [np.zeros_like(value), np.ones_like(value)])
         value = np.where(value > 127 , 1, 0)
-        #name = (file.replace('Result\Thai '+ font + '\\', '', 1))
-        #name = (file.replace('.png', '', 1))
         name = listname[index]
         value = value.flatten()
         last = np.array([name])
@@ -77,7 +66,7 @@ def main():
         res.append(value)
         print(value)
         index +=1
-    with open("CsvData/testdata.csv", 'w' , newline='') as f:
+    with open("CsvData/testdata.csv", 'w' , newline='',encoding='utf-8') as f:
         writer = csv.writer(f)
         writer.writerows(res)
 
