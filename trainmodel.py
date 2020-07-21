@@ -14,7 +14,6 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
 import pickle
-
 #load dataset
 f=open("CsvData/traindata.csv", "r")
 print("Already Get TrainData")
@@ -40,6 +39,7 @@ X_train, X_validation, Y_train, Y_validation = train_test_split(X, y, test_size=
 
 # Make predictions on validation dataset
 model = LogisticRegression(solver='liblinear', multi_class='ovr')
+#model = KNeighborsClassifier()
 model.fit(X_train, Y_train)
 predictions = model.predict(X_validation)
 
@@ -49,6 +49,7 @@ print(confusion_matrix(Y_validation, predictions))
 print(classification_report(Y_validation, predictions))
 
 # save the model to disk
-filename = "Model/finalized_model_LR.sav"
+filename = "Model/PDF2IMG-finalized_model_LR.sav"
+#filename = "Model/finalized_model_KNN.sav"
 pickle.dump(model, open(filename, 'wb'))
 print("Already Dump Model File")

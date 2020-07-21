@@ -84,12 +84,21 @@ def image_deskew(image):
     return rotated
 
 def preprocess(img): #recieve input image and turns it into clean binary
-    img = cv2.fastNlMeansDenoisingColored(img,None,10,10,7,21) #eliminnates noise
-    img = cv2.resize(img, (1240,1754), interpolation = cv2.INTER_AREA)#resize
+    img = cv2.fastNlMeansDenoisingColored(img,None,10,10,7,21) 
+    img = cv2.resize(img, (1240,1754), interpolation = cv2.INTER_AREA)
+    '''height,width ,channel= img.shape
+    for x in range(height):
+        for y in range(width):
+            color = img[x,y]
+            if not (color[0] == color[1] == color[2]):
+                img[x,y] = [255,255,255]'''
+    grayimg = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     #colorgut = color_cut(img)
     #img = image_deskew(colorgut)
-    ret,binimg = cv2.threshold(img,125,255,cv2.THRESH_BINARY) #turns image into binary
-    #binimg = cv2.bitwise_not(binimg) #inverts image
+    #ret,binimg = cv2.threshold(img,125,255,cv2.THRESH_BINARY) #turns image into binary
+    binimg = cv2.adaptiveThreshold(grayimg,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,11,2)
+    #binimg = cv2.bitwise_not(binimg)
+    #inverts image
     #binimg = cv2.cvtColor(binimg, cv2.COLOR_GRAY2RGB)
     return binimg
 
@@ -245,7 +254,7 @@ def crop_image_only_outside(img): #crop image to reduce all blackspace outside
 def horizontal_cut(binimg,dest): #cuts binary image into folder 'horizontalcutoutput' by row to dest folder
     
     #finding horizontal partition
-    height,width,channel = binimg.shape
+    height,width = binimg.shape
     lines = []
 
     blotcount = 0
@@ -256,7 +265,7 @@ def horizontal_cut(binimg,dest): #cuts binary image into folder 'horizontalcutou
 
     for x in range(height):
         for y in range(width):
-            if binimg[x,y,0] == 0:
+            if binimg[x,y] == 0:
                 blotcount += 1
         if blotcount > 0 and beginsignal == 1:
             lines.append(x)
@@ -327,17 +336,16 @@ def vertical_cut(horizontalcutfolder_path): #cuts horizontal cuts outputs into s
 
         os.makedirs('{}/verticalcutoutput/line{}'.format(horizontalcutfolder_path,cntimg),exist_ok=True)
         binimg = cv2.imread('{}/horizontalcutoutput/cropimage_{}.png'.format(horizontalcutfolder_path,cntimg))
-        height,width,channel = binimg.shape
+        height,width = binimg.shape
 
         #finding vertical partition
         lines = []
-
         blotcount = 0
         beginsignal = 1
 
         for y in range(width):
             for x in range(height):
-                if binimg[x,y,0] == 0:
+                if binimg[x,y] == 0:
                     blotcount += 1
             if blotcount > 0 and beginsignal == 1:
                 lines.append(y)
@@ -419,7 +427,7 @@ def vertical_cutTraining(horizontalcutfolder_path,cntallimgtilnow = 0): #cuts ho
             break
         #image preprocessing
         binimg = cv2.imread('{}/horizontalcutoutput/cropimage_{}.png'.format(horizontalcutfolder_path,cntimg))
-        height,width,channel = binimg.shape
+        height,width,chanel = binimg.shape
 
         #finding vertical partition
         lines = []

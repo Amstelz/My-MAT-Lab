@@ -51,10 +51,9 @@ def main():
         #value = np.select([value <= 127, value>127], [np.zeros_like(value), np.ones_like(value)])
         value = np.where(value > 127 , 1, 0)
         value = value.flatten()
-        value = np.concatenate((value, last))
         res.append(value)
         print(value)
-    with open("CsvData/unknowndata.csv", 'w' , newline='') as f:
+    with open("CsvData/unknowndata.csv", 'w' , newline='',encoding='utf-8') as f:
         writer = csv.writer(f)
         writer.writerows(res)
 

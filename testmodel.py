@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+import pandas as pd
 from pandas import read_csv
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
@@ -7,6 +10,29 @@ import sys
 import numpy
 import pickle
 import csv
+
+def classifaction_report_csv(report):
+    report_data = []
+    lines = report.split('\n')
+    row = {}
+    row_data = lines[2].split('      ')
+    row['class'] = row_data[2]
+    row['precision'] = row_data[3]
+    row['recall'] = row_data[4]
+    row['f1_score'] = row_data[5]
+    row['support'] = row_data[6]
+    report_data.append(row)
+    for line in lines[3:-5]:
+        row = {}
+        row_data = line.split('      ')
+        row['class'] = row_data[1]
+        row['precision'] = row_data[2]
+        row['recall'] = row_data[3]
+        row['f1_score'] = row_data[4]
+        row['support'] = row_data[5]
+        report_data.append(row)
+    dataframe = pd.DataFrame.from_dict(report_data)
+    dataframe.to_csv('CsvData/report.csv', index = False)
 
 #load dataset
 f=open("CsvData/testdata.csv", "r")
@@ -38,16 +64,12 @@ Y = array[:,1296]
 # Test model
 res = loaded_model.predict(X)
 
-# Dict
-with open('CsvData/DictBook.csv', mode='r') as infile:
-    reader = csv.reader(infile)
-    character = {rows[1]:rows[0] for rows in reader}
 
 #print res
 new_res = []
 str =''
 for name in res:
-    str = str + character[name]
+    str = str + name
 print(str)
 
 text_file = open("result/testresult.txt", "w")
@@ -63,9 +85,15 @@ confusion = []
 for row in data:
   confusion.append(list(row))
 
-with open('CsvData/confusion matrix.csv', mode='w', newline='') as file:
+with open('CsvData/confusion matrix.csv', mode='w', newline='',encoding='utf8') as file:
     writer = csv.writer(file)
     writer.writerows(confusion)
+
+#pd.DataFrame(report_dict)
+report = classification_report(Y, res)
+classifaction_report_csv(report)
+
+
 #data.reshape(100,300)
 #numpy.set_printoptions(threshold=sys.maxsize)
 #print(data)
