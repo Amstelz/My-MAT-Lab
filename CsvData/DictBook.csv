@@ -1,47 +1,80 @@
-﻿test,test
-0,0 arabic
-1,1 arabic
-2,2 arabic
-๓,3 arabic
-4,4 arabic
-๕,5 arabic
-6,6 arabic
-๗,7 arabic
-8,8 arabic
-๙,9 arabic
-(,(
-),)
-์,hyphent
-ๆ,yamock
-่,ekk
+﻿0,0 arabic
 ๐,0 thai
+1,1 arabic
 ๑,1 thai
+2,2 arabic
 ๒,2 thai
+๓,3 arabic
 ๓,3 thai
+4,4 arabic
 ๔,4 thai
+๕,5 arabic
 ๕,5 thai
+6,6 arabic
+๖,6 thai
+๗,7 arabic
+๗,7 thai
+8,8 arabic
+๘,8 thai
+๙,9 arabic
+๙,9 thai
 ๕๕,55thai
 ๕๖,56thai
 ๕๗,57thai
-๖,6 thai
-๗,7 thai
-๘,8 thai
-๙,9 thai
+์,hyphent
+่,ekk
+้,ttt222
+ํ,o5
+ ,blank
+(,(
+),)
+‘,fan-left
+’,fan-right
+test,test
+เ,sara ae
+เค,k
+เงื่,saraae ngoo sarauea maiake
+เช่,saraae chorchang maiake
+เชิ,saraae chang sarai
+เชิ,saraae chang sarai
+เท,tae(pour)
+เป็,saraae porpla maitaikoo
+เพิ่,permnomormar
+เมิ,sara ae mah sarai
+เมิ,sara ae mah sarai
+เมื,m2
+เมื่,miiii11
+เรี,r1
+เรื่,saraae rua saraeua maiake
+เล,saraae lorling
+เล้,saraae ling maitoe
+เห,sara ae heeb
+เห็,sara ae heeb maitaikoo
+เห่,saraae heeb maiake
+โ,sara oe
+ใ,sara ai maimoen
+ใน,nai(in)
+ให้,hai (give)
+ไ,sara ai maimalai
+ไท,maimalai tahan
+ไม่,mai(nope)
+ไว้,maimalai van maitoe
+ไว้ใ,maimalai van maitoe moen
 ก,gor gai
 ก์,gaigaran
 ก็,gorrr
 ก่,gorgaiandmaiake
-ก้ไข,kaekainosaraair
 กํ,gum
+กใ,gai maimoen
+กใ,gai maimoen
+ก้ไ,gortoemaimalai
+ก้ไข,kaekainosaraair
 กัด,gud(bite)
 กัน,gun
 กับ,gab(with)
 กิ,gorgaiandsaraie
 กี,gee
 กี่,gii(how much)
-กใ,gai maimoen
-กใ,gai maimoen
-ก้ไ,gortoemaimalai
 ข,kho khai
 ข็,khorkhaimaitaikoo
 ข้,khaimaitoe
@@ -57,6 +90,7 @@
 ค,kor kwai
 ค์,kwai karan
 คํ,kwai saraum
+ค์ไ,kwai karan maimalai
 คั่ง,kung(mungkung)
 คัญ,kan ying
 คับ,kub (too fit)
@@ -66,19 +100,16 @@
 คุ,kwai sarau
 คุ้,kwai oo maitoe
 คุ้ม,koom(be worth)
-เค,k
-ค์ไ,kwai karan maimalai
 ฅ,kor kon
 ฆ,kor rakang
 ง,ngor ngoo
-งใน,ngongoomaimolnornoo
-เงื่,saraae ngoo sarauea maiake
 งใ,ngoo meon
+งใน,ngongoomaimolnornoo
 งไ,ngoo maimalai
 จ,jor jan
 จ้,jan toe
-จริ,jan rorrua sarai
 จํ,jum(remember)
+จริ,jan rorrua sarai
 จั,jan maihanagas
 จัก,jak
 จัด,jad(set)
@@ -92,6 +123,7 @@
 ช,chor chang
 ช่,chang maiake
 ช้,chorchangandmaitoe
+ชโ,chang oe
 ช้บัง,chang maitoe baimai han ngoo
 ช้บัง,chang maitoe baimai han ngoo
 ชั,chang maihanagus
@@ -99,21 +131,17 @@
 ชิ,chi (can hear when your girl thouchy)
 ชื่,chang saraeu maiake
 ชุ,chu
-เช่,saraae chorchang maiake
-เชิ,saraae chang sarai
-เชิ,saraae chang sarai
-ชโ,chang oe
 ซ,sor so
 ซึ่,sor so sara eu maiake
 ซื่,sorso saraeua maiake
 ฌ,chor gacher
 ญ,yor ying
-ญั,ying maitoe
-ญัติ,yingyat
-ญี,ying hanagus
 ญโ,ying oe
 ญใ,ying meon
 ญไ,ying malai
+ญั,ying maitoe
+ญัติ,yingyat
+ญี,ying hanagus
 ฎ,dor chada
 ฏ,tor patak
 ฏิ,tor patak sara i
@@ -130,6 +158,9 @@
 ด,dor dek
 ด็,dek maitaikoo
 ด้,dek maitoe
+ดํ,dum
+ด้โ,dor toe oe
+ด้โ,dor toe oe
 ด้ท,dek maitoe tahan
 ด้ท,dek maitoe tahan
 ด้ป,dek maitoe porpla
@@ -137,24 +168,21 @@
 ด้วิ,wdordekmaitoevorvanwii
 ด้ส,dor hanagas sua
 ด้อ,dek maitoe or ang
-ดํ,dum
 ดัง,dung(loud)
 ดั่ง,dek hanagus maiake ngoo
 ดับ,dub (dead)
 ดิ,dek sarai
 ดิ์,dddd
 ดี,dee(good)
-ด้โ,dor toe oe
-ด้โ,dor toe oe
 ต,tor tao
 ต่,taomaiake
 ต้,taomaitoe
+ตํ,tao sara um
 ต้นไ,ton maimalai (incomplete tree)
 ต้บ้ง,tao maitoe bai toe ngoo
 ต้บัง,tao maitoe bai arr ngoo
 ตรี,tree2
 ต้อ,tor2
-ตํ,tao sara um
 ตั้,tao hanagas maitoe
 ตั้,tao hanagas maitoe
 ตั้ง,tang(stand)
@@ -182,8 +210,6 @@
 ทื,tahan saraeua
 ทุ,tahan sarau
 ทู,two(platwo)
-เท,tae(pour)
-ไท,maimalai tahan
 ธ,tor tong
 ธํ,tum (tumrong)
 ธิ,thi(tong)
@@ -193,8 +219,11 @@
 น์,noo karan
 น่,noo maiake
 น้,nornooandmaitoe
-นไข,noo maimalai khai
 นํ,num
+นโ,noo saraoe
+นใ,noo maimeon
+นไ,noo maimalai
+นไข,noo maimalai khai
 นัก,nuk
 นัน,nun
 นั้น,nun maitoe
@@ -210,10 +239,6 @@
 นุ,noo sarau
 นุ,noo sarau
 นู,nooandsaraoo
-นโ,noo saraoe
-ใน,nai(in)
-นใ,noo maimeon
-นไ,noo maimalai
 บ,bor baimai
 บ่,bor1
 บ้,baimai maitoe
@@ -232,21 +257,20 @@
 ป,por pla
 ป็,porplaandmaitaikoo
 ป้,portoe
-ปิ,por sarai
-เป็,saraae porpla maitaikoo
 ปโ,por oe
+ปิ,por sarai
 ผ,phor pheung
 ผ่,ppp2
 ผู่,pheung saraeua maiake
 ผู้,puu(who)
-ผู้ดํ,ppp4
+ผู้ใ,phu meon
 ผู้ใด,phudai (who that)
+ผู้ดํ,ppp4
 ผู้บ,phueng saraoo maitoe baimai
 ผู้ป,ppp5
 ผู้ล,phu + ling
 ผู้สํ,phu sua saraum
 ผู้สื,phu sua saraeua
-ผู้ใ,phu meon
 ฝ,fhor fhar
 ฝ่,fharmaiake
 ฝั,fhar hanagus
@@ -262,7 +286,6 @@
 พื่,paulpanandsaraeuaandmaiake
 พื้น,peuan(floor)
 พุ,pu
-เพิ่,permnomormar
 ฟ,for fun
 ฟ้,fun toe
 ภ,por sampao
@@ -271,6 +294,8 @@
 ภิ,sampao sarai
 ม,mor mar
 ม่,mormarandmaiake
+มใ,mor maimoen
+มไ,mah malai
 มั,moe maihanagas
 มัค,muk11
 มั่ง,mung(mungkung)
@@ -283,18 +308,17 @@
 มื่,muuu111
 มุ,mar sarau
 มุ,mar sarau
-เมิ,sara ae mah sarai
-เมิ,sara ae mah sarai
-เมื,m2
-เมื่,miiii11
-มใ,mor maimoen
-มไ,mah malai
-ไม่,mai(nope)
-้,ttt222
 ย,yor yak
 ย์,yak karan
 ย่,yakmaiake
 ย้,yak toe
+ยโ,yak oe
+ย์โ,yak karan oe
+ยใ,yokyak maimoen
+ย์ใ,yak karan meon
+ย์ใ,yak karan meon
+ยไ,yoryaksaraaimaimalai
+ย์ไ,yak karun malai
 ย้ง,yong maitoe
 ยั,yak hanagus
 ยัง,young(not yet)
@@ -305,19 +329,14 @@
 ยื,yyy77
 ยุ,yu
 ยู่,yuu
-ยโ,yak oe
-ย์โ,yak karan oe
-ยใ,yokyak maimoen
-ย์ใ,yak karan meon
-ย์ใ,yak karan meon
-ยไ,yoryaksaraaimaimalai
-ย์ไ,yak karun malai
 ร,ror rua
 ร์,rrr11
 ร็,rua maitaikoo
 ร่,rorruaandmaiake
 ร้,rorruaandmaitoe
+รใ,rorruamaimoen
 รให้,ruahai(rua+give)
+รไ,rorruaandmaimarai
 รั,rua hanagas
 รัก,rak(love)
 รัช,ratch
@@ -337,17 +356,13 @@
 รู,roo (hole)
 รู้,ruu(know)
 รู้,ruu(know)
-เรี,r1
-เรื่,saraae rua saraeua maiake
-รใ,rorruamaimoen
-รไ,rorruaandmaimarai
 ฤ,ff
 ล,lor ling
 ล่,lingandmaiake
 ล้,ling maitoe
+ลํ,lum
+ลํ,lum
 ล้ว,ling maitoe van
-ลํ,lum
-ลํ,lum
 ลั,lingmaihanagas
 ลัก,lak(steel)
 ลัง,lung2
@@ -355,13 +370,13 @@
 ลื,ling saraeua
 ลื่,ling saraeua maiake
 ลุ,lu(lorlingsarau)
-เล,saraae lorling
-เล้,saraae ling maitoe
 ว,vor van
 ว่,vanmaiake
 ว้,vanmaitoe
-ว้ซึ่,yan toe so saraee ake
+ว้ใ,w4
+วไ,vanmaimalai
 วไท,w2
+ว้ซึ่,yan toe so saraee ake
 ว้น,w3
 วัน,wan(day)
 วัส,van hanagus sua
@@ -369,18 +384,14 @@
 วิ,vansarai
 วุ,van sarau
 วุ,van sarau
-ว้ใ,w4
-วไ,vanmaimalai
-ไว้,maimalai van maitoe
-ไว้ใ,maimalai van maitoe moen
 ศ,sor sala
 ศ์,sala karan
+ศใ,sala maimoen
 ศั,saraandmaihunargas
 ศัก,sak
 ศัย,sala hun yak
 ศี,sala saraee
 ศุ,sala sarau
-ศใ,sala maimoen
 ษ,sor leausi
 ษ์,leausi karan
 ษฎ,leausi patak
@@ -390,8 +401,10 @@
 ษัต,leausi sat
 ส,sor sua
 ส่,suamaiake
-สรี,suaruaee
 สํ,sumsua(sumkan)
+สโ,s1
+สใ,sua mai moen
+สรี,suaruaee
 สั,sua hanagus
 สัก,sak (rare wood)
 สัง,sungsua
@@ -406,12 +419,11 @@
 สื่,sua saraeua maiake
 สุ,susua
 สู,sua soo
-สโ,s1
-สใ,sua mai moen
 ห,hor heab
 ห็,heeb maitaikoo
 ห่,heebandmaiake
 ห้,heebmaitoe
+ห้ใ,heeb toe meon
 ห้ค,heeb maitoe kwai
 ห้ค,heeb maitoe kwai
 ห้ต,h1
@@ -421,14 +433,11 @@
 ห้ป,heebmaitoepla
 ห้มี,heebandmaitoeandme
 หรื,heeb rua saraeu
-เห,sara ae heeb
-เห็,sara ae heeb maitaikoo
-เห่,saraae heeb maiake
-ให้,hai (give)
-ห้ใ,heeb toe meon
 ฬ,lor chula
 อ,or ang
 อํ,um(or ang sara um)
+อใ,orandmaimol
+อไ,o4
 อั,or hanagas
 อัค,o1
 อัญ,un ying
@@ -436,24 +445,15 @@
 อัน,un
 อันใ,un + maimoen
 อันใ,un + maimoen
-อำ,(com)um
 อํา,o3
+อำ,(com)um
 อิ,i(or ang sara i)
 อี,ee (edok)
 อื่,or and eua and maiake
-อใ,orandmaimol
-อไ,o4
 ฮ,hor nokhook
-ํ,o5
 ะ,sara a
 ะไ,sara a maimalai
 า,sara ar
 าใ,sara ar maimoen
 าไ,sara ar maimalai
-เ,sara ae
-โ,sara oe
-ใ,sara ai maimoen
-ไ,sara ai maimalai
- ,blank
-‘,fan-left
-’,fan-right
+ๆ,yamock
